@@ -20,7 +20,7 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 interface Props {
-  targetPosition: LatLngExpression;
+  targetPosition: [number, number];
 }
 
 export default function MapClient({ targetPosition }: Props) {
